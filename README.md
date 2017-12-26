@@ -1,33 +1,25 @@
-# Markdown editor app
+﻿# Markdown editor app (using Reactjs)
 
-## markdown editor using Reactjs and live server
 
-### For using the app, make sure you have npm, yarn and node.js installed, then enter those commands
-```
-npm install -g live-server
-live-server -v
-live-server public 
-```
+## This app will allow you to make a layout using markdown syntax. Test it !
 
-### Commands for installing Babel (will create a package.json file) :
-```
-npm install -g babel-cli 
-npm init 
-```
 
-### Commands for installing presets (will create node-modules folder and yarn.lock)
-```
-yarn add babel-preset-react babel-preset-env 
-```
+### For using the app, make sure you have npm, yarn and node.js installed.
 
-### Then, run this last command :
+### Used those commands to generate node-modules &co.
 ```
-babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
+npm install -g create-react-app
+create-react-app markdown-editor
+```
+### Then,
+```
+cd markdown-editor
+yarn start
 ```
 
 ## Used those techno :
 * Reactjs
-* Live server
+* Webpack (via create react app)
 * Marked (plugins) https://github.com/chjj/marked
 * HTML
 * CSS
